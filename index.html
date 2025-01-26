@@ -8,9 +8,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header role="header">
+    <header role="header" class="siteHeader">
       <section class="topHeader">
         <div class="burgermenu">
           <!-- <div> -->
@@ -38,8 +39,8 @@
           </div> -->
         </div>
 
-        <div class="logo">
-          <img src="8052f8daa5cfa53d6808c07f6f5b03c0.webp" alt="Logo" />
+        <div class="logo crop-container">
+          <img src="img/8052f8daa5cfa53d6808c07f6f5b03c0.webp" alt="Logo" />
         </div>
         <div class="login">
           <p>LOGIN</p>
@@ -65,13 +66,13 @@
       />
     </div>
 
-    <main>
+    <main class="wrapper">
       <section class="articleGrid">
         <!-- 1st  -->
-        <p><span>abonnement</span>Læsetid: 7 min.</p>
+        <p class="articleOneHeader"><span>Abonnement</span>Læsetid: 7 min.</p>
 
-        <article>
-          <h2>
+        <article class="articleOneRight">
+          <h2 class="articleOneh2">
             Gas er et godt politisk våben. Det er bare ikke putin, der bruger
             det
           </h2>
@@ -81,21 +82,22 @@
             in rem officia quam repellendus iusto asperiores, officiis natus
             excepturi, aperiam alias harum ea!
           </p>
-          <figure>
+          <figure class="articleOneFigure">
             <img src="https://placehold.co/600x400" alt="billede" />
-            <figcaption>
+            <figcaption class="articleOneFigcaption">
               Rusland vil ikke bruge... Lorem ipsum dolor sit amet consectetur
               adipisicing elit. Excepturi magnam cum ipsum blanditiis, officiis,
               porro fuga maiores quae quam rem vitae soluta.
             </figcaption>
           </figure>
-          <div class="photographer">
+          <div class="articleOnePhotographer">
             <i class="fa fa-camera"></i> Peter Nygaard Christensen
           </div>
         </article>
+
         <!-- 2nd  -->
-        <span>Udland</span>
-        <header>
+        <span class="articleTwoLeft">Udland</span>
+        <header class="articleTwoHeader">
           <time datetime="2018-05-07">
             <i></i>
             7. maj 2018
@@ -105,11 +107,11 @@
             Kommentarer (<span class="commentCounter">2</span>)
           </span>
         </header>
-        <section class="sources">
+        <section class="articleTwoLefts sources">
           <div class="writer">
             <i class="fa fa-user"></i>
             <img
-              src="https://placehold.co/30x30"
+              src="https://placehold.co/35x35"
               alt=""
               class="writer_portrait"
             />
@@ -128,7 +130,7 @@
             </div>
           </div>
         </section>
-        <article class="overlayArt">
+        <article class="articleTwoRight overlayArt">
           <section class="overlayArt_overlay">
             <h2>
               Vores abonnenter kalder os kritisk, seriøs og troværdig. Se om du
@@ -164,7 +166,7 @@
         </article>
       </section>
 
-      <section class="sliderGrid">
+      <section class="sliderArea">
         <header>
           <span>Fik du læst? <i></i></span>
           <span class="arrows">
@@ -181,8 +183,18 @@
               class="slider_img"
             />
             <figcaption class="slider_caption">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed
-              accusantium exercitationem voluptates magni debitis.
+              Lorem ipsum, dolor sit amet coetur adipisicing elit. Sed
+              accusantium exercitam voluptates magni debitis.
+            </figcaption>
+          </figure>
+          <figure class="slider_figure">
+            <img
+              src="https://placehold.co/200x120"
+              alt="atikel billede"
+              class="slider_img"
+            />
+            <figcaption class="slider_caption">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             </figcaption>
           </figure>
           <figure class="slider_figure">
@@ -193,7 +205,7 @@
             />
             <figcaption class="slider_caption">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed
-              accusantium exercitationem voluptates magni debitis.
+              accus exercitationem magni debitis.
             </figcaption>
           </figure>
           <figure class="slider_figure">
@@ -203,18 +215,7 @@
               class="slider_img"
             />
             <figcaption class="slider_caption">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed
-              accusantium exercitationem voluptates magni debitis.
-            </figcaption>
-          </figure>
-          <figure class="slider_figure">
-            <img
-              src="https://placehold.co/200x120"
-              alt="atikel billede"
-              class="slider_img"
-            />
-            <figcaption class="slider_caption">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed
+              Lorem ipsum, dolor sit amet coetur adipisicing elit. Sed
               accusantium exercitationem voluptates magni debitis.
             </figcaption>
           </figure>
@@ -256,14 +257,14 @@
             <h3><a href="#">Flere Nyheder</a></h3>
           </footer>
         </aside>
-        <section>
+        <section class="latestNewsGridRight">
           <h2><i class="fa fa-house"></i> Forsiden lige nu</h2>
           <section class="latestNews">
             <article class="latestNews_article">
               <span class="addMember_span">Abonnement</span>
               <figure class="latestNews_figure">
                 <img
-                  src="https://placehold.co/200x120"
+                  src="https://placehold.co/224x120"
                   alt="atikel billede"
                   class="latestNews_img"
                 />
@@ -278,7 +279,7 @@
               <span class="addMember_span">Abonnement</span>
               <figure class="latestNews_figure">
                 <img
-                  src="https://placehold.co/200x120"
+                  src="https://placehold.co/224x120"
                   alt="atikel billede"
                   class="latestNews_img"
                 />
@@ -290,7 +291,7 @@
               <span class="addMember_span">Abonnement</span>
               <figure class="latestNews_figure">
                 <img
-                  src="https://placehold.co/200x120"
+                  src="https://placehold.co/224x120"
                   alt="atikel billede"
                   class="latestNews_img"
                 />
@@ -307,7 +308,7 @@
               <span class="addMember_span">Abonnement</span>
               <figure class="latestNews_figure">
                 <img
-                  src="https://placehold.co/200x120"
+                  src="https://placehold.co/224x120"
                   alt="atikel billede"
                   class="latestNews_img"
                 />
@@ -322,7 +323,7 @@
               <span class="addMember_span">Abonnement</span>
               <figure class="latestNews_figure">
                 <img
-                  src="https://placehold.co/200x120"
+                  src="https://placehold.co/224x120"
                   alt="atikel billede"
                   class="latestNews_img"
                 />
@@ -343,7 +344,7 @@
               <span class="addMember_span">Abonnement</span>
               <figure class="latestNews_figure">
                 <img
-                  src="https://placehold.co/200x120"
+                  src="https://placehold.co/224x120"
                   alt="atikel billede"
                   class="latestNews_img"
                 />

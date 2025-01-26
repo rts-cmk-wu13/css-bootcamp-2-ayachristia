@@ -1,0 +1,400 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  --container: 60rem;
+
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* ----------------header---------------------------- */
+.siteheader {
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 0.5px solid rgba(211, 211, 211, 0.525);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.topHeader {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.5px solid rgba(211, 211, 211, 0.525);
+  font-weight: 700;
+  padding: 0 1rem;
+}
+
+.burgermenu {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.crop-container {
+  height: 100px;
+  width: 440px;
+  overflow: hidden;
+}
+.crop-container img {
+  /* margin-top: -100px; */
+  margin-bottom: -20px;
+}
+
+.bottomHeader {
+  display: flex;
+  justify-content: center;
+}
+
+.bottomHeader nav ul {
+  display: flex;
+  gap: 2em;
+  font-weight: 700;
+}
+
+.bottomHeader nav ul li:nth-child(3) a {
+  color: red;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* --------------------banner----------------------- */
+.banner {
+  width: var(--container);
+  margin: auto;
+  margin-top: 0.5rem;
+}
+.banner img {
+  width: 100%;
+}
+
+/* ------------------content wrapper------------------ */
+
+.wrapper {
+  width: var(--container);
+  margin: auto;
+  margin-top: 2rem;
+}
+
+/* ------------------articleGrid------------ */
+
+.articleGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* ----------article area------------ */
+
+.articleOneHeader {
+  grid-column: 2/5;
+  color: grey;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+.articleOneHeader span {
+  color: red;
+  margin-right: 0.5rem;
+  text-transform: none;
+}
+
+.articleOneRight {
+  grid-column: 2/5;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+
+  position: relative;
+}
+
+.articleOneFigure img {
+  width: 100%;
+}
+
+.articleOneFigcaption {
+  position: absolute;
+  top: 22%;
+  left: -33%;
+  width: 30%;
+  text-align: right;
+  font-size: 0.8rem;
+}
+.articleOnePhotographer {
+  position: absolute;
+  top: 42%;
+  left: -26%;
+  font-size: 0.8rem;
+}
+
+/* ----------article with overlay area-------------- */
+.articleTwoLeft {
+  grid-column: 1/2;
+}
+.sources .writer {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.sources .writer img {
+  height: 100%;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+/* ment some placeholder når billede mangler */
+.sources .writer .fa-user {
+  display: none;
+}
+
+.sources .photographer h2,
+.sources .writer h2 {
+  font-size: 0.8rem;
+  margin-bottom: 0.4rem;
+}
+
+.sources .photographer,
+.sources .writer {
+  font-size: 0.8rem;
+}
+
+.articleTwoHeader {
+  grid-column: 2/5;
+  display: flex;
+  justify-content: space-between;
+}
+
+.articleTwoRight {
+  grid-column: 2/5;
+}
+
+.overlayArt {
+  position: relative;
+}
+
+.overlayArt_text {
+  width: 60%;
+  padding-bottom: 6rem;
+}
+
+/* jeg skulle have lagt article text og footer ind i én section derfor har jeg lavet position absolute istedet  */
+.overlayArt_socials {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 60%;
+}
+
+.overlayArt_overlay {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  background: linear-gradient(rgba(255, 255, 255, 0.351), white, white);
+  padding-top: 5rem;
+}
+
+/* -------------------slider-------------------- */
+
+.sliderArea {
+  width: 100%;
+}
+
+.sliderArea header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider_figure {
+  width: 20%;
+}
+
+.slider img {
+  width: 100%;
+}
+
+/* ----------------LatestNewsGrid------------------------ */
+
+.latestNewsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.latestNewsGrid span {
+  grid-column: 1/2;
+}
+
+.latestNewsGrid header {
+  grid-column: 2/5;
+  text-align: end;
+}
+
+.latestNewsGrid aside {
+  grid-column: 1/2;
+  margin-right: 1.5rem;
+}
+.latestNewsGrid aside section {
+  padding-bottom: 0.5rem;
+  border-bottom: 0.5px solid rgb(243, 237, 237);
+}
+.latestNewsGrid aside section time {
+  font-size: 0.8rem;
+  color: grey;
+}
+.latestNewsGrid aside section h3 {
+  font-size: 1rem;
+}
+
+.latestNewsGridRight {
+  grid-column: 2/5;
+}
+
+.latestNewsGridRight h2 {
+  font-size: 1rem;
+}
+
+.latestNews {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-bottom: 12em;
+}
+
+.latestNews_article {
+  width: 14rem;
+  /* height: auto; */
+}
+.latestNews_img {
+  width: 100%;
+  height: 7.5rem;
+  background-color: grey;
+}
+
+/* ----------------membergrid---------------- */
+
+.memberGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-bottom: 10em;
+}
+
+.memberGrid span {
+  grid-column: 1/2;
+}
+.memberGrid header {
+  grid-column: 2/5;
+}
+
+.memberGrid aside {
+  grid-column: 1/2;
+}
+
+.comment {
+  grid-column: 2/5;
+  padding-right: 10em;
+}
+
+.memberGrid footer {
+  grid-column: 2/5;
+  margin-top: 2rem;
+}
+
+/* -----------------------footer---------------------- */
+footer {
+  background-color: rgb(220, 217, 217);
+}
+/* footergrid inde i footer for at låse footer content med margin overflow i sin egen container  */
+.footerGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: var(--container);
+  padding-bottom: 4rem;
+  margin: auto;
+
+  font-size: 0.8rem;
+}
+
+.footerGrid h2 {
+  font-size: 1rem;
+}
+
+/* troede jeg havde brug for whiteTop men realized jeg bare skulle tilføje margin-top minus for at løfte min forside img  */
+/* .whiteTop {
+  height: 1.7rem;
+  background-color: pink;
+  display: none;
+} */
+
+/* .footerGrid section:nth-child(1) {
+  grid-column: 1/5;
+} */
+
+/* nth child starter på 2 da jeg stadig har mit nth child 1 i html som jeg ikke på fjerne  */
+.footerGrid section:nth-child(2) {
+  grid-column: 1/2;
+}
+.footerGrid section:nth-child(3) {
+  grid-column: 2/3;
+  margin-top: -1.4rem;
+}
+.footerGrid section:nth-child(3) img {
+  width: 12em;
+  box-shadow: 0 3px 6px rgba(101, 100, 100, 0.615);
+}
+
+.footerGrid section:nth-child(4) {
+  grid-column: 3/4;
+}
+.footerGrid section:nth-child(5) {
+  grid-column: 4/5;
+}
+
+.footerInfo {
+  background-color: rgb(220, 217, 217);
+  text-align: center;
+  /* border-top: 1px solid grey; */
+  position: relative;
+  font-size: 0.8rem;
+  color: grey;
+  line-break: 0.5rem;
+  padding-top: 0.8em;
+}
+
+.footerInfo a {
+  color: grey;
+}
+
+/* skulle have haft footerInfo inde i footerGrid så istedet måtte jeg lave denne løsning  */
+.footerInfo::before {
+  content: "";
+  width: 80%;
+  height: 1px;
+  background-color: whitesmoke;
+  box-shadow: 1px 0 2px rgba(128, 128, 128, 0.442);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%); /* 'makes left 50% move back half its size' */
+}
