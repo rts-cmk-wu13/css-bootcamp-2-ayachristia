@@ -8,6 +8,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -16,6 +20,7 @@
         <div class="burgermenu">
           <!-- <div> -->
           <button
+            class="burgerBtn"
             role="button"
             aria-controls="primaryNavigation"
             aria-describedby="message-menu-button"
@@ -25,7 +30,7 @@
             <i class="fa fa-bars"></i>
           </button>
           <p>MENU</p>
-          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="material-symbols-outlined">search</i>
           <!-- </div> -->
           <!-- <nav class="hidden" id="primaryNavigation">
             <ul>
@@ -72,12 +77,12 @@
         <p class="articleOneHeader"><span>Abonnement</span>Læsetid: 7 min.</p>
 
         <article class="articleOneRight">
-          <h2 class="articleOneh2">
+          <h2>
             Gas er et godt politisk våben. Det er bare ikke putin, der bruger
             det
           </h2>
           <p>
-            nogle EU-lande... Lorem ipsum dolor sit amet, consectetur
+            Nogle EU-lande... Lorem ipsum dolor sit amet, consectetur
             adipisicing elit. Deleniti accusamus ex autem amet modi sed nostrum
             in rem officia quam repellendus iusto asperiores, officiis natus
             excepturi, aperiam alias harum ea!
@@ -99,11 +104,11 @@
         <span class="articleTwoLeft">Udland</span>
         <header class="articleTwoHeader">
           <time datetime="2018-05-07">
-            <i></i>
+            <i class="material-symbols-outlined">schedule</i>
             7. maj 2018
           </time>
           <span>
-            <i></i>
+            <i class="material-symbols-outlined">forum</i>
             Kommentarer (<span class="commentCounter">2</span>)
           </span>
         </header>
@@ -136,7 +141,7 @@
               Vores abonnenter kalder os kritisk, seriøs og troværdig. Se om du
               er enig...
             </h2>
-            <button class="overlayArt_overlay_Btn">Klik her!</button>
+            <button class="overlayArt_overlay_btn">Klik her!</button>
             <p>
               Allerede abonnent?
               <span class="overlayArt_overlay_login">Log ind her</span>
@@ -223,7 +228,7 @@
       </section>
 
       <section class="latestNewsGrid">
-        <span>Seneste nyt</span>
+        <span class="latestNewsGridLeft_span">Seneste nyt</span>
         <header>
           <a href="">Information.dk</a>
         </header>
@@ -360,7 +365,7 @@
       </section>
 
       <section class="memberGrid">
-        <span>Anbefalinger</span>
+        <span class="memberGridLeft_span">Anbefalinger</span>
         <header>
           <span>Kommentarer</span>
         </header>
@@ -424,7 +429,7 @@
             <a href="#">Anbefal kommentar</a>
           </section>
         </section>
-        <footer>
+        <footer class="memberGrid_footer">
           <p>
             Du skal være registreret bruger for at kommentere.
             <a href="#">Log ind</a> eller <a href="#">opret bruger>></a>
@@ -433,14 +438,14 @@
       </section>
     </main>
 
-    <footer>
+    <footer class="siteFooter">
       <section class="footerGrid">
         <section class="whiteTop"></section>
 
         <section>
           <h2 class="footerHeader">Information som E-avis</h2>
           <ul>
-            <p>
+            <p class="ul_text">
               Du kan læse Information, lige som du vil. På din mobil, tablet
               eller computer - og helt ude i skoven.
             </p>
