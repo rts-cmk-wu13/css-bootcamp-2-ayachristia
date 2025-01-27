@@ -186,24 +186,25 @@ a {
   grid-column: 2/5;
 }
 
+/*/////// OVERLAY BENEATH  ///////*/
+
 .overlayArt {
   position: relative;
 }
 
 .overlayArt_text {
-  width: 60%;
   padding-bottom: 6rem;
 }
 
 /* jeg skulle have lagt article text og footer ind i én section derfor har jeg lavet position absolute istedet  */
 .overlayArt_socials {
   display: flex;
-  position: absolute;
-  top: 0;
-  left: 60%;
+  width: 200px;
+  float: right;
 }
 
 .overlayArt_overlay {
+  display: none;
   position: absolute;
   bottom: 0;
   text-align: center;
